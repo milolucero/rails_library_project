@@ -192,8 +192,11 @@ end
 
 # ActiveAdmin user to database
 if Rails.env.development?
-  AdminUser.create!(email: "admin@bookhub.com", password: "password",
-                    password_confirmation: "password")
+  AdminUser.create!(
+    email: "admin@bookhub.com",
+    password: "password",
+    password_confirmation: "password"
+  )
 end
 
 # Add About and Contact pages

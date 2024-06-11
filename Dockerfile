@@ -31,8 +31,9 @@ RUN gem install rails bundler
 # Install gems
 RUN bundle install
 
-# Run migrations
+# Run migrations and seed DB
 RUN rails db:migrate RAILS_ENV=development
+RUN rails db:seed RAILS_ENV=development
 
 # Stripe keys
 ENV PUBLISHABLE_KEY=$PUBLISHABLE_KEY

@@ -61,14 +61,16 @@ Once the server is up and running, you can access BookHub by visiting [http://lo
 
 ## Additional notes
 
-**To access the administrative platform**
+**Accessing the administrative platform**
 
-1. Log in as an administrative user
+Administrative users have an independent interface where they can manage the content and users on the platform.
+
+1. Visit [http://localhost:3000/admin](http://localhost:3000/admin).
+2. Log in as an administrative user
    - Username: `admin@bookhub.com`
    - Password: `password`
-2. Visit [http://localhost:3000/admin](http://localhost:3000/admin).
 
-**To complete a purchase**
+**Completing a purchase**
 
 1. Run the platform running with Stripe checkout enabled.
 2. When entering payment details use:
