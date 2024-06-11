@@ -31,6 +31,9 @@ RUN gem install rails bundler
 # Install gems
 RUN bundle install
 
+# Run migrations
+RUN rails db:migrate RAILS_ENV=development
+
 # Stripe keys
 ENV PUBLISHABLE_KEY=$PUBLISHABLE_KEY
 ENV SECRET_KEY=$SECRET_KEY
